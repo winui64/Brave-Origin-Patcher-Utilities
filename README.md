@@ -1,8 +1,7 @@
 # Brave Origin Patcher for Windows
-![Alt Text](SmallLogo.png)   
+<p align="center">![Alt Text](SmallLogo.png)/p>
 
 This is a simple click-to-run executable built with Python that patches Brave Origin Nightly, telling it that the product has been purchased, even if you didn't. 
-
 
 
 ### Usage:
