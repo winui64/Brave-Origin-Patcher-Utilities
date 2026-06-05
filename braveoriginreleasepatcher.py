@@ -2,7 +2,7 @@ import os
 import json
 from pathlib import Path
 
-//define the location of OS Appdata folder
+
 def patch_brave_origin():
     base = Path(os.environ["LOCALAPPDATA"])
 
@@ -23,7 +23,7 @@ def patch_brave_origin():
     except Exception as e:
         print(f"Failed to read JSON: {e}")
         return
-//Tells Brave Origin that the product has been puchased
+
     brave_cfg = data.get("brave", {})
     brave_cfg["origin"] = {
         "purchase_validated": True
