@@ -15,4 +15,5 @@ This works with Brave Origin, Brave Origin Beta and Brave Origin Nightly, and yo
 4. That's it! Hopefully 
 
 ## A MacOS version is in the works! Stay tuned for more info...
+Current progress based on: https://github.com/ObjectAscended/brave-origin-windows-unlocker/issues/6
 
