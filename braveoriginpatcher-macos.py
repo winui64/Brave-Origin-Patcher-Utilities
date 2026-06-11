@@ -11,14 +11,14 @@ BASE_DIR_NAMES = [
 ]
 
 def patch_brave_origin_for_base(base_dir_name):
-    base = Path(os.environ.get("LOCALAPPDATA", ""))
-    if not base:
-        return False, "LOCALAPPDATA not set"
-
-    state_file = base / "BraveSoftware" / base_dir_name / "User Data" / "Local State"
+    # macOS path: ~/Library/Application Support/BraveSoftware/
+    home = Path.home()
+    base = home / "Library" / "Application Support" / "BraveSoftware" / base_dir_name / "User Data"
+    
+    state_file = base / "Local State"
 
     if not state_file.exists():
-        return False, "Local State file not found"
+        return False, f"Local State file not found at {state_file}"
 
     try:
         data = json.loads(state_file.read_text(encoding="utf-8"))
@@ -65,7 +65,7 @@ def run_patch(selected_bases, output_widget):
 
 def create_gui():
     root = tk.Tk()
-    root.title("Patch Brave Origin")
+    root.title("Patch Brave Origin (macOS)")
 
     frame = tk.Frame(root, padx=10, pady=10)
     frame.pack(fill="both", expand=True)
