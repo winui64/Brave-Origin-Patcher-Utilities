@@ -14,5 +14,5 @@ This works with Brave Origin, Brave Origin Beta and Brave Origin Nightly, and yo
 3. Double-click on the executable, select the version(s) you want patched, and it'll patch Brave Origin.
 4. That's it! Hopefully 
 
-
+##A MacOS version is in the works! Stay tuned for more info...
 
