@@ -12,7 +12,7 @@ This works with Brave Origin, Brave Origin Beta and Brave Origin Nightly, and yo
 1. Download the latest release from the releases section. 
 2. Download and install Brave Origin. After install, close the purchase dialog.
 3. Double-click on the executable, select the version(s) you want patched, and it'll patch Brave Origin.
-4. That's it! Hopefully 
+4. That's it! Hopefully... Please report any issues!
 
 ## A MacOS version is in the works! Stay tuned for more info...
 Current progress based on: https://github.com/ObjectAscended/brave-origin-windows-unlocker/issues/6
